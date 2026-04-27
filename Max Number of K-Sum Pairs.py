@@ -25,3 +25,19 @@ Iteration 2: current=1,complement=1 => (1,1) so the count becomes 0 in hashmap
 Iteration 3: loops through the third element 
 Iteration 4: loops through 4th element
 Half your loop is useless....
+
+
+# ONE PASS :
+
+class Solution:
+    def maxOperations(self, nums: List[int], k: int) -> int:
+        hash_map={}
+        cnt=0
+        for n in nums:
+            complement=k-n
+            if hash_map.get(complement,0) >0:
+                hash_map[complement]-=1
+                cnt+=1
+            else:
+                hash_map[n]=hash_map.get(n,0)+1
+        return cnt
