@@ -24,3 +24,6 @@ class Solution:
             curr.next=ListNode(new_node)
             curr=curr.next
         return dummy.next
+
+# TC: O(MAX(m,n))
+# SC : O(MAX(m,n)) 
