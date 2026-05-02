@@ -33,5 +33,5 @@ class Solution:
             if not ch:  
                 return "" 
         return ch
-# TC : O(n) n is len(strs) * O(m) m is min len of comparisions (second for loop)=> O(n*m)
+# TC : O(n) n is len(strs) * O(m) m is min len of comparisions (second for loop)=> O(n*m) BUT IN STRICT PYTHON IT IS o(N*M²)
 # sC : O(m)
