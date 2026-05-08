@@ -10,3 +10,5 @@ class Solution:
 # Time Complexity : O(n) positions×O(n) comparisons each=O(n^2)
 # space Complexity1: O(2n)
 
+Knuth-Morris-Pratt KMP String Matching Algorithm:
+
